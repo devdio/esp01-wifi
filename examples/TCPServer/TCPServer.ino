@@ -1,36 +1,10 @@
-/**
- * @example TCPServer.ino
- * @brief The TCPServer demo of library WeeESP8266. 
- * @author Wu Pengfei<pengfei.wu@itead.cc> 
- * @date 2015.02
- * 
- * @par Copyright:
- * Copyright (c) 2015 ITEAD Intelligent Systems Co., Ltd. \n\n
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License, or (at your option) any later version. \n\n
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-/**
- * file TCPServer.ino
- * brief Modify for bitblock wifi-shield 
- * author ks.moon<iamtopaz@gmail.com> 
- * date 2017.03
- */
 #include <ESP8266.h>
 #include <SoftwareSerial.h>
 
 
-#define SSID "@dio"
-#define PASSWORD "dio12345678"
-SoftwareSerial mySerial(12, 13); /* RX:12, TX:13 */
+#define SSID "SSID"
+#define PASSWORD "PASSWORD"
+SoftwareSerial mySerial(2, 2); /* RX:2, TX:3 */
 ESP8266 wifi(mySerial);
 
 void setup(void)
